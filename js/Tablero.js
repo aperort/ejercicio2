@@ -2,16 +2,11 @@ import { Submarino } from "./Submarino.js";
 
 class Tablero {
     constructor(UIcontrol) {
-        /**
-            this.tablero = null;
-            this.size = 0;
-         */
 
         this.UIcontrol = UIcontrol;
         this.UIcontrol.start(this);
         this.submarino = new Submarino();
         this.size = 0;
-        /*console.log("El tablero se ha creado");*/
     }
 
     creaGridTemplate(total) {
